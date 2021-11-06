@@ -2,10 +2,13 @@
 // Создайте функцию getRandomInt, которая выводит в блок .out-1 случайное целое число от 117 до 132. Все переменные должны быть внутри функции. Запустите эту функцию.
 
 const out1 = document.querySelector('.out-1');
-
+out1.innerHTML = 10000;
 // функцию пишите здесь
-
-
+function getRandomInt(min,max) {
+  let random = Math.floor(max - Math.random() * (max - min -1));
+  console.log(random);
+}
+getRandomInt(117,132);
 // Task 2.
 
 // Чуть усложним. Сейчас первая задача жестко завязана на значения 117 и 132. Напишите функцию getRandomInt2, которая на основе min, max генерирует случайное целое число в этом диапазоне и выводит в out-2. Запустите эту функцию. 
